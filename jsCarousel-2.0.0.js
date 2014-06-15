@@ -78,7 +78,7 @@
                         wrapper.find("img").click(
                          function() {
                              if (settings.onthumbnailclick != null) {
-                                 settings.onthumbnailclick($(this).attr('src'));
+                                 settings.onthumbnailclick($(this).attr('src') + "Selected");
                              }
                          });
                         slidercontents.append(wrapper);
