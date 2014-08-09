@@ -1,11 +1,11 @@
-﻿
+
 (function($) {
     $.fn.extend({
         jsCarousel: function(options) {
             var settings = $.extend({
                 scrollspeed: 1500,
                 delay: 5000,
-                itemstodisplay: 5,
+                itemstodisplay: 4,
                 autoscroll: false,
                 circular: false,
                 masked: true,
@@ -78,7 +78,16 @@
                         wrapper.find("img").click(
                          function() {
                              if (settings.onthumbnailclick != null) {
-                                 settings.onthumbnailclick($(this).attr('src') + "Selected");
+                                /* console settings.onthumbnailclick;
+                                 settings.onthumbnailclick($(this).attr('src') + "Selected"); 
+                                 Lightview.show($(this).attr('src'));*/
+                                 $lightviewImage = ($(this).attr('src'));
+                                 
+                                 Lightview.show({
+      url: $lightviewImage,
+      type: 'image',
+      title: 'Javascript API',
+      caption: 'This video was shown using the Javascript API'});
                              }
                          });
                         slidercontents.append(wrapper);

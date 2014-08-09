@@ -1,8 +1,8 @@
-﻿/*Horizontal Orientation CSS*/
+/*Horizontal Orientation CSS*/
 .jscarousal-horizontal
 {
-	width: 740px;
-	height: 118px;
+	width: 800px;
+	height: 200px;
 	background-color: #121212;
 	border: solid 1px #7A7677;
 	margin: 0;
@@ -36,7 +36,7 @@
 .jscarousal-contents-horizontal
 {
 	width: 690px;
-	height: 124px;
+	height: 150px;
 	float: left;
 	position: relative;
 	overflow: hidden;
